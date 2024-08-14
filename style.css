@@ -1,0 +1,193 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+/* CODE */
+
+*{
+    font-family: Roboto;
+}
+
+.bg{
+    background-image: url(./bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.holder{
+    background-color: #fff;
+    width: 40%;
+    padding: 30px;
+}
+
+.holder_title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.input{
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input_title{
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.selects{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.select_title{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.calculator{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.submit_btn{
+    color: #fff;
+    background-color: blue !important;
+    padding: 10px 40px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.submit_center{
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .holder{
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .submit_btn{
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .holder{
+        width: 70%;
+    }
+
+    .holder_title{
+        font-size: 19px;
+    }
+}
+
